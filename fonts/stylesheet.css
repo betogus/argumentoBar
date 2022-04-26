@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'PF Regal Finesse Pro';
+    src: url('PFRegalFinessePro-Regular.eot');
+    src: local('PFRegalFinessePro-Regular'),
+        url('PFRegalFinessePro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-Regular.woff2') format('woff2'),
+        url('PFRegalFinessePro-Regular.woff') format('woff'),
+        url('PFRegalFinessePro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro UBlack';
+    src: url('PFRegalFinessePro-UBlack.eot');
+    src: local('PFRegalFinessePro-UBlack'),
+        url('PFRegalFinessePro-UBlack.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-UBlack.woff2') format('woff2'),
+        url('PFRegalFinessePro-UBlack.woff') format('woff'),
+        url('PFRegalFinessePro-UBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro';
+    src: url('PFRegalFinessePro-Medium.eot');
+    src: local('PFRegalFinessePro-Medium'),
+        url('PFRegalFinessePro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-Medium.woff2') format('woff2'),
+        url('PFRegalFinessePro-Medium.woff') format('woff'),
+        url('PFRegalFinessePro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro';
+    src: url('PFRegalFinessePro-Italic.eot');
+    src: local('PFRegalFinessePro-Italic'),
+        url('PFRegalFinessePro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-Italic.woff2') format('woff2'),
+        url('PFRegalFinessePro-Italic.woff') format('woff'),
+        url('PFRegalFinessePro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro';
+    src: url('PFRegalFinessePro-Black.eot');
+    src: local('PFRegalFinessePro-Black'),
+        url('PFRegalFinessePro-Black.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-Black.woff2') format('woff2'),
+        url('PFRegalFinessePro-Black.woff') format('woff'),
+        url('PFRegalFinessePro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro';
+    src: url('PFRegalFinessePro-Bold.eot');
+    src: local('PFRegalFinessePro-Bold'),
+        url('PFRegalFinessePro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-Bold.woff2') format('woff2'),
+        url('PFRegalFinessePro-Bold.woff') format('woff'),
+        url('PFRegalFinessePro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro';
+    src: url('PFRegalFinessePro-MediumItalic.eot');
+    src: local('PFRegalFinessePro-MediumItalic'),
+        url('PFRegalFinessePro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-MediumItalic.woff2') format('woff2'),
+        url('PFRegalFinessePro-MediumItalic.woff') format('woff'),
+        url('PFRegalFinessePro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro';
+    src: url('PFRegalFinessePro-BlackItalic.eot');
+    src: local('PFRegalFinessePro-BlackItalic'),
+        url('PFRegalFinessePro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-BlackItalic.woff2') format('woff2'),
+        url('PFRegalFinessePro-BlackItalic.woff') format('woff'),
+        url('PFRegalFinessePro-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro';
+    src: url('PFRegalFinessePro-BoldItalic.eot');
+    src: local('PFRegalFinessePro-BoldItalic'),
+        url('PFRegalFinessePro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-BoldItalic.woff2') format('woff2'),
+        url('PFRegalFinessePro-BoldItalic.woff') format('woff'),
+        url('PFRegalFinessePro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Regal Finesse Pro UBlack';
+    src: url('PFRegalFinessePro-UBlackItalic.eot');
+    src: local('PFRegalFinessePro-UBlackItalic'),
+        url('PFRegalFinessePro-UBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('PFRegalFinessePro-UBlackItalic.woff2') format('woff2'),
+        url('PFRegalFinessePro-UBlackItalic.woff') format('woff'),
+        url('PFRegalFinessePro-UBlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
