@@ -20,7 +20,7 @@ body {
       filter: brightness(0.7); }
   body main h1, body main .h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 40px;
     position: absolute;
     top: 300px;
     right: 0;
