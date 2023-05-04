@@ -1,110 +1,364 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-body {
-  background: #c6c2c2; }
-  body header .logo {
+*:not(:empty) {
+  cursor: default; }
+
+html {
+  font-size: 16px; }
+  html body header .bg-light {
+    margin: 0px 200px 0px 100px; }
+  html body header .nav-transition {
+    background-color: #F2F2F2;
+    transition: background-color 0.5s;
+    animation: aparecer 0.5s ease-in-out; }
+  html body header .ocultar {
+    animation: desaparecer 0.5s ease-in-out; }
+
+@keyframes aparecer {
+  0% {
+    padding-bottom: 50px; }
+  50% {
+    padding-bottom: 30px; } }
+
+@keyframes desaparecer {
+  0% {
+    padding-bottom: 30px;
+    background-color: #F2F2F2; }
+  50% {
+    padding-bottom: 50px;
+    background-color: transparent; } }
+  html body header .logo {
     font-family: "Playfair Display";
-    font-size: 30px !important; }
-  body header .logo-abajo {
-    font-size: 10px !important; }
-  body main .carousel-indicators [data-bs-target] {
-    border-radius: 50%; }
-  body main .carousel-inner {
-    max-width: 100vw;
-    max-height: 100vh; }
-    body main .carousel-inner img {
+    font-size: 30px !important;
+    color: white;
+    font-weight: bolder; }
+  html body header .logo-abajo {
+    font-size: 10px !important;
+    color: white; }
+  html body header .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer; }
+    html body header .nav-link:hover {
+      color: #bcbcbc; }
+  html body main {
+    background: #F2F2F2; }
+    html body main #seccion0 .carousel-indicators [data-bs-target] {
+      border-radius: 50%; }
+    html body main #seccion0 .carousel-inner {
+      max-width: 100vw;
+      max-height: 100vh; }
+      html body main #seccion0 .carousel-inner img {
+        object-fit: cover;
+        object-position: center;
+        height: 100vh;
+        width: 100vw; }
+      html body main #seccion0 .carousel-inner .img-fluid {
+        filter: brightness(0.7); }
+    html body main #seccion0 h1, html body main #seccion0 .h1 {
+      text-align: center;
+      font-size: 40px;
+      position: absolute;
+      top: 300px;
+      right: 0;
+      left: 0;
+      z-index: 2;
+      color: #fff;
+      font-weight: 5 !important;
+      letter-spacing: -2px;
+      padding-bottom: -20px;
+      line-height: 35px !important; }
+      html body main #seccion0 h1 p, html body main #seccion0 .h1 p {
+        padding-top: -20px;
+        font-family: "PF Regal Finesse Pro";
+        font-weight: 900;
+        font-size: 70px; }
+    html body main #seccion0 .img-carousel {
+      width: 99.5%;
+      height: 20px;
+      position: relative;
+      display: flex;
+      justify-content: center; }
+    html body main #seccion0 .img-miniatura {
+      width: 80px;
+      height: 80px;
+      z-index: 1;
+      margin: -130px 0;
       object-fit: cover;
-      object-position: center;
-      height: 100vh;
-      width: 100vw; }
-    body main .carousel-inner .img-fluid {
-      filter: brightness(0.7); }
-  body main h1, body main .h1 {
-    text-align: center;
-    font-size: 40px;
-    position: absolute;
-    top: 300px;
-    right: 0;
-    left: 0;
-    z-index: 2;
-    color: #fff;
-    font-weight: 5 !important;
-    letter-spacing: -2px;
-    padding-bottom: -20px;
-    line-height: 35px !important; }
-    body main h1 p, body main .h1 p {
-      padding-top: -20px;
-      font-family: "PF Regal Finesse Pro";
-      font-weight: 900;
-      font-size: 70px; }
-  body .seccion1 div div h2 .descubri, body .seccion1 div div .h2 .descubri {
-    color: #dcccbf;
-    font-family: "PF Regal Finesse Pro";
-    font-size: 50px;
-    font-weight: 900; }
-  body .seccion1 div div h2 .nuestroLugar, body .seccion1 div div .h2 .nuestroLugar {
-    font-family: "Oswald";
-    font-weight: 900;
-    position: relative;
-    top: -30px;
-    font-size: 40px; }
-  body .seccion1 div div p.textoComun, body .seccion1 .carta-grid div div p, body .carta-grid .seccion1 div div p {
-    color: #7d90a9;
-    font-family: "Poppins";
-    font-weight: bolder;
-    font-size: 13px; }
-  body .seccion1 div div img {
-    object-fit: contain;
-    object-position: center;
-    height: auto;
-    width: 500px; }
-  body .seccion2 div img {
-    object-fit: cover;
-    object-position: center;
-    height: 100vh;
-    width: 100vw;
-    position: relative; }
-  body .seccion2 h2, body .seccion2 .h2 {
-    position: relative;
-    top: -250px; }
-    body .seccion2 h2 .descubri, body .seccion2 .h2 .descubri {
+      border-radius: 1rem;
+      transition: width 0.2s ease-in-out, height 0.2s ease-in-out; }
+    html body main #seccion0 .img-hidden {
+      width: 0;
+      height: 0;
+      transition: width 0.2s ease-in-out, height 0.2s ease-in-out; }
+    html body main #seccion1 {
+      background: #fff; }
+      html body main #seccion1 div div h2 .descubri, html body main #seccion1 div div .h2 .descubri {
+        color: #dcccbf;
+        font-family: "PF Regal Finesse Pro";
+        font-size: 50px;
+        font-weight: 900; }
+      html body main #seccion1 div div h2 .nuestroLugar, html body main #seccion1 div div .h2 .nuestroLugar {
+        font-family: "Oswald";
+        font-weight: 900;
+        position: relative;
+        top: -30px;
+        font-size: 40px; }
+      html body main #seccion1 div div p.textoComun, html body main #seccion1 #seccion3 .seccion3-grid div div p, html body main #seccion3 .seccion3-grid #seccion1 div div p {
+        color: #7d90a9;
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 13px; }
+      html body main #seccion1 div div img {
+        object-fit: contain;
+        object-position: center;
+        height: auto;
+        width: 500px; }
+    html body main #seccion2 div {
+      min-height: 600px;
+      background-image: url("https://argumentorestaurante.com/wp-content/uploads/2021/03/descubri-nuestras-especialidades-2.jpg");
+      background-position: center;
+      background-size: cover;
+      /* img {
+                        @include img (cover, center, 100vh, 100vw);
+                        position: relative;
+                    } */ }
+    html body main #seccion2 h2, html body main #seccion2 .h2 {
+      position: relative;
+      top: -250px; }
+      html body main #seccion2 h2 .descubri, html body main #seccion2 .h2 .descubri {
+        color: #dcccbf;
+        font-family: "PF Regal Finesse Pro";
+        font-size: 80px;
+        font-weight: 900; }
+      html body main #seccion2 h2 .nuestrasEspecialidades, html body main #seccion2 .h2 .nuestrasEspecialidades {
+        font-family: "Oswald";
+        font-weight: 900;
+        position: relative;
+        top: -35px;
+        font-size: 50px;
+        color: #fff; }
+    html body main #seccion3 {
+      height: 600px; }
+      html body main #seccion3 .seccion3-grid {
+        position: relative;
+        top: -250px;
+        align-content: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: repeat(3, 250px); }
+        html body main #seccion3 .seccion3-grid div {
+          max-width: 100%;
+          max-height: 100%;
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          html body main #seccion3 .seccion3-grid div img {
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            width: 100%; }
+          html body main #seccion3 .seccion3-grid div h3, html body main #seccion3 .seccion3-grid div .h3 {
+            font-size: 20px;
+            text-align: center; }
+          html body main #seccion3 .seccion3-grid div p {
+            text-align: center; }
+    html body main #seccion4 .img-container {
+      min-height: 600px;
+      background-image: url("https://argumentorestaurante.com/wp-content/uploads/2021/04/argumento-eventos.jpg");
+      background-position: center -100px;
+      background-size: cover; }
+    html body main #seccion4 h2, html body main #seccion4 .h2 {
+      position: relative;
+      top: -450px; }
+      html body main #seccion4 h2 .descubri, html body main #seccion4 .h2 .descubri {
+        color: #dcccbf;
+        font-family: "PF Regal Finesse Pro";
+        font-size: 80px;
+        font-weight: 900; }
+      html body main #seccion4 h2 .nuestrosEventos, html body main #seccion4 .h2 .nuestrosEventos {
+        font-family: "Oswald";
+        font-weight: 900;
+        position: relative;
+        top: -35px;
+        font-size: 50px;
+        color: #fff; }
+    html body main #seccion5 {
+      position: relative;
+      top: -100px; }
+      html body main #seccion5 h3.bora, html body main #seccion5 .bora.h3 {
+        color: #000;
+        font-family: "PF Regal Finesse Pro";
+        font-size: 40px;
+        font-weight: 600; }
+      html body main #seccion5 .nuestroLugar {
+        font-family: "Oswald";
+        font-weight: 900;
+        position: relative;
+        top: -30px;
+        font-size: 40px; }
+      html body main #seccion5 p.textoComun, html body main #seccion5 #seccion3 .seccion3-grid div p, html body main #seccion3 .seccion3-grid div #seccion5 p {
+        color: #7d90a9;
+        font-family: "Poppins";
+        font-weight: bolder;
+        font-size: 13px; }
+    html body main #seccion6 nav div ul {
+      list-style: none; }
+      html body main #seccion6 nav div ul .underline:after {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        content: "";
+        height: 2px;
+        bottom: 15px;
+        left: 0;
+        background-color: #000;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out; }
+      html body main #seccion6 nav div ul .underline:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left; }
+    html body main #seccion6 .aparecer {
+      transform: translateX(-10%);
+      opacity: 0;
+      transition: 0.5s opacity ease-in, 0.5s transform ease-in; }
+    html body main #seccion6 .aparecer.active {
+      opacity: 1;
+      transform: translateX(0); }
+    html body main #seccion6 div {
+      gap: 10px;
+      text-align: center; }
+      html body main #seccion6 div .seccion6-div::before {
+        display: flex;
+        justify-content: center;
+        background-color: #000;
+        align-items: center;
+        content: "+";
+        font-size: 40px;
+        position: relative;
+        z-index: 9;
+        color: #fff;
+        width: 380px;
+        height: 264px;
+        margin-bottom: -264px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        cursor: pointer; }
+      html body main #seccion6 div .seccion6-div:hover::before {
+        opacity: 0.5; }
+    html body main #seccion6 .modal-content {
+      background: transparent; }
+    html body main #seccion6 .img-fluid {
+      max-height: 90vh; }
+    html body main #seccion6 div .seccion6-img {
+      width: 380px;
+      height: 264px;
+      position: relative;
+      z-index: 6;
+      object-fit: cover; }
+    html body main #seccion6 a {
+      cursor: pointer;
+      color: #000;
+      text-decoration: none;
+      font-family: "Poppins"; }
+    html body main #seccion6 .modal-img {
+      max-width: 80%; }
+    html body main .seccion6-pestania {
+      cursor: pointer; }
+    html body main .seccion6-cargarmas b {
+      cursor: pointer; }
+  html body #seccion7 {
+    padding: 0 85px; }
+    html body #seccion7 .ig-img {
+      cursor: pointer; }
+    html body #seccion7 .redes {
       color: #dcccbf;
       font-family: "PF Regal Finesse Pro";
       font-size: 80px;
       font-weight: 900; }
-    body .seccion2 h2 .nuestrasEspecialidades, body .seccion2 .h2 .nuestrasEspecialidades {
+    html body #seccion7 .sociales {
       font-family: "Oswald";
       font-weight: 900;
       position: relative;
-      top: -35px;
+      top: -40px;
       font-size: 50px;
-      color: #fff; }
-  body .carta-grid {
-    position: relative;
-    top: -250px;
-    align-content: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(3, 250px); }
-    body .carta-grid div {
-      max-width: 100%;
-      max-height: 100%;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
-      body .carta-grid div img {
-        object-fit: cover;
-        object-position: center;
-        height: 100%;
-        width: 100%; }
-      body .carta-grid div h3, body .carta-grid div .h3 {
-        font-size: 20px;
-        text-align: center; }
-      body .carta-grid div p {
-        text-align: center; }
-  body footer .wspIcon {
+      color: #000; }
+    html body #seccion7 div .round-icon {
+      border-radius: 50%;
+      width: 50px; }
+    html body #seccion7 div div {
+      display: grid;
+      row-gap: 10px; }
+      html body #seccion7 div div div {
+        width: 378.34px;
+        height: 360px; }
+        html body #seccion7 div div div img {
+          object-fit: cover;
+          max-width: 100%;
+          min-width: 100%;
+          min-height: 360px;
+          max-height: 360px;
+          object-position: center;
+          opacity: 1;
+          transition: opacity 0.3s;
+          position: relative;
+          top: 0;
+          left: 0; }
+        html body #seccion7 div div div img:hover {
+          opacity: 0.7; }
+    html body #seccion7 .button-container .dark-button, html body #seccion7 .button-container .pink-button {
+      background: #333333;
+      border-radius: 4px;
+      border: none;
+      width: fit-content;
+      font-size: 14px;
+      padding: 8px; }
+    html body #seccion7 .button-container .pink-button {
+      background: #dcccbf; }
+  html body #seccion8 div .columnaIzquierda {
+    padding-bottom: 130px; }
+    html body #seccion8 div .columnaIzquierda h3, html body #seccion8 div .columnaIzquierda .h3 {
+      font-family: "PF Regal Finesse Pro";
+      font-size: 40px;
+      font-weight: 600; }
+    html body #seccion8 div .columnaIzquierda p {
+      color: #7d90a9;
+      font-family: "Poppins";
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px; }
+    html body #seccion8 div .columnaIzquierda a:any-link {
+      color: #dcccbf;
+      text-decoration: none; }
+  html body #seccion8 div .columnaDerecha form p {
+    font-size: 15px;
+    font-weight: bolder;
+    color: #000;
+    margin: 0;
+    padding: 0; }
+  html body #seccion8 div .columnaDerecha form input, html body #seccion8 div .columnaDerecha form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 1em;
+    border-color: #fff; }
+  html body #seccion8 div .columnaDerecha form textarea {
+    height: 200px; }
+  html body #seccion8 div .columnaDerecha form input[type=submit], html body #seccion8 div .columnaDerecha form textarea[type=submit] {
+    width: 150px;
+    height: 50px;
+    border-radius: 0.5em;
+    background: #867668;
+    color: #fff;
+    font-size: 22px;
+    font-family: "Poppins";
+    font-weight: bolder;
+    line-height: 0%; }
+  html footer #footer-fixed .wspIcon {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -116,11 +370,36 @@ body {
     background: #24cf67;
     text-align: center;
     transition: background 2s; }
-    body footer .wspIcon svg {
+    html footer #footer-fixed .wspIcon svg {
       position: relative;
       top: 10px; }
-    body footer .wspIcon:hover {
+    html footer #footer-fixed .wspIcon:hover {
       background: #108f43; }
+  html footer #footer-absolute {
+    height: 250px;
+    background: #8f7b69; }
+    html footer #footer-absolute div {
+      display: flex;
+      justify-content: space-around; }
+      html footer #footer-absolute div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 90px;
+        color: #fff;
+        width: 250px;
+        font-weight: bolder;
+        font-family: "Poppins"; }
+        html footer #footer-absolute div div span {
+          font-size: 18px; }
+        html footer #footer-absolute div div i {
+          font-size: 30px; }
+        html footer #footer-absolute div div:nth-child(3) {
+          font-size: 18px;
+          font-weight: lighter; }
+        html footer #footer-absolute div div:nth-child(4) i {
+          font-size: 40px; }
 
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
@@ -401,7 +680,7 @@ button {
 button:focus:not(:focus-visible) {
   outline: 0; }
 
-input,
+input, html body #seccion8 div .columnaDerecha form textarea,
 button,
 select,
 optgroup,
