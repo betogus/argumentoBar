@@ -246,9 +246,7 @@ const handleSubmit = (evt, form, route) => {
         })
      
         .then(res => {
-            console.log(res)
-            console.log(res.status)
-            if (res.status === 201) {
+            if (res.status === 200) {
                 form.email.value = ""
                 form.name.value = ""
                 form.message.value = ""
